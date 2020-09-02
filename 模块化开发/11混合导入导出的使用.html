@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11混合导入导出的使用</title>
+</head>
+
+<body>
+
+</body>
+<script type="module">
+    import user ,{ name } from './js/11.js'
+    console.log(user)
+    console.log(name)
+</script>
+
+<!-- 如果使用批量导入 则默认导出的要使用defalut调用 -->
+<script type="module">
+    import * as api from './js/11.js'
+    console.log(api.default)
+    console.log(api.name)
+</script>
+</html>
